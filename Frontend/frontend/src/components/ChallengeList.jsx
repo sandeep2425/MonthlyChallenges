@@ -5,9 +5,10 @@ export default function ChallengeList({ challenges ,setChallenges, setEditingId,
         setDescription(challenge.description);
     };
 
-     // Delete a challenge by ID
+    // Delete a challenge by ID
     const deleteChallenge = async (id) => {
-        const response = await fetch(`http://localhost:8080/api/challenges/${id}`, {
+        const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+        const response = await fetch(`${apiUrl}/api/challenges/${id}`, {
             method: "DELETE"
         });
         if (response.ok) {

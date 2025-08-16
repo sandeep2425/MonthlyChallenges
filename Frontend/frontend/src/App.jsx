@@ -11,7 +11,8 @@ function App() {
     // Fetch challenges from backend
     useEffect(() => {
         const fetchData = async () => {
-            let res = await fetch("http://localhost:8080/api/challenges");
+            const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+            let res = await fetch(`${apiUrl}/api/challenges`);
             let data = await res.json();
             setChallenges(data);
         };
@@ -21,7 +22,8 @@ function App() {
     // Create a new challenge
     const createChallenge = async () => {
         const newChallenge = { month, description };
-        const response = await fetch("http://localhost:8080/api/challenges", {
+        const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+        const response = await fetch(`${apiUrl}/api/challenges`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newChallenge)
@@ -37,14 +39,15 @@ function App() {
     // Submit the updated challenge
     const handleUpdate = async () => {
         const updatedChallenge = { month, description };
-        const response = await fetch(`http://localhost:8080/api/challenges/${editingId}`, {
+        const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+        const response = await fetch(`${apiUrl}/api/challenges/${editingId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(updatedChallenge)
         });
 
         if (response.ok) {
-            const res = await fetch("http://localhost:8080/api/challenges");
+            const res = await fetch(`${apiUrl}/api/challenges`);
             const data = await res.json();
             setChallenges(data);
             resetForm();

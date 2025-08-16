@@ -1,35 +1,4 @@
->>>>>>> 9bfe65b8aca9e0dfcf14351a9772fda8fa9746c6
-## Quick Start
-
-### Backend
-```bash
-cd MonthChallenges/
-mvn spring-boot:run
-```
-
-### Frontend
-```bash
-cd Frontend/frontend/
-npm install
-npm run dev
-```
-
-<<<<<<< HEAD
-The application will be available at:
-- Frontend: `http://localhost:5173`
-- Backend API: `http://localhost:8080`
-                                                        
-                                                    
-## API Endpoints
-
-- `GET /api/challenges` - Get all challenges
-- `POST /api/challenges` - Create new challenge
-- `PUT /api/challenges/{id}` - Update challenge
-- `DELETE /api/challenges/{id}` - Delete challenge
-=======
-The application will be available at `http://localhost:5173` (frontend) and `http://localhost:8080` (backend API).
->>>>>>> 9bfe65b8aca9e0dfcf14351a9772fda8fa9746c6
-=======
+>>>>>>> 9bfe65b8aca9e0dfcf
 # Month Challenges Project
 
 A full-stack web application for managing monthly challenges with a React frontend and Spring Boot backend.
@@ -65,11 +34,10 @@ This project provides a simple yet effective platform to create, track, and mana
 ![Main Interface](./image.png)
 
 ### Create New Challenge
-![Create Challenge Form](https://via.placeholder.com/800x400/2196F3/white?text=Create+Challenge+Form)
+![Create Challenge Form]![alt text](image-1.png)
 
 ### Challenge List View
-![Challenge List](https://via.placeholder.com/800x400/FF9800/white?text=Challenge+List+View)
-
+![Challenge List]![alt text](image-2.png)
 ## Usage
 
 ### Adding a Challenge
@@ -110,34 +78,3 @@ The application will be available at:
 - `DELETE /api/challenges/{id}` - Delete challenge
 
 =======
->>>>>>> 9bfe65b8aca9e0dfcf14351a9772fda8fa9746c6
-## Quick Start
-
-### Backend
-```bash
-cd MonthChallenges/
-mvn spring-boot:run
-```
-
-### Frontend
-```bash
-cd Frontend/frontend/
-npm install
-npm run dev
-```
-
-<<<<<<< HEAD
-The application will be available at:
-- Frontend: `http://localhost:5173`
-- Backend API: `http://localhost:8080`
-
-## API Endpoints
-
-- `GET /api/challenges` - Get all challenges
-- `POST /api/challenges` - Create new challenge
-- `PUT /api/challenges/{id}` - Update challenge
-- `DELETE /api/challenges/{id}` - Delete challenge
-=======
-The application will be available at `http://localhost:5173` (frontend) and `http://localhost:8080` (backend API).
-
->>>>>>> 9bfe65b8aca9e0d                         fcf14351a9772fda8fa9746c6

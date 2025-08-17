@@ -24,5 +24,8 @@ COPY --from=build /app/target/MonthChallenges-0.0.1-SNAPSHOT.jar .
 # Expose port 8080
 EXPOSE 8080
 
+# Set environment variable for Render
+ENV PORT=8080
+
 # Specify the command to run the application
 ENTRYPOINT ["java", "-jar", "/app/MonthChallenges-0.0.1-SNAPSHOT.jar"]

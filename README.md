@@ -1,4 +1,3 @@
->>>>>>> 9bfe65b8aca9e0dfcf
 # Month Challenges Project
 
 A full-stack web application for managing monthly challenges with a React frontend and Spring Boot backend.
